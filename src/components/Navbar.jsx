@@ -1,39 +1,67 @@
-function Navbar() {
-    return (
-      <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              The Bark
-            </a>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    About us
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Menu
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Upcoming Events
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Contact us
-                  </a>
-                </li>
-              </ul>
-            </div>
+function Navbar({ handleNavLinkClick }) {
+  return (
+    <>
+      <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+        <div className='container-fluid'>
+          <a className='navbar-brand'>The Bark</a>
+          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+            <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
+                  data-target='about'
+                  onClick={handleNavLinkClick}
+                >
+                  About Us
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
+                  data-target='menu'
+                  onClick={handleNavLinkClick}
+                >
+                  Menu
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
+                  data-target='catering'
+                  onClick={handleNavLinkClick}
+                >
+                  Catering
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
+                  data-target='events'
+                  onClick={handleNavLinkClick}
+                >
+                  Upcoming Events
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
+                  data-target='contact'
+                  onClick={handleNavLinkClick}
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </>
-    );
-  }
-  
-  export default Navbar;
+        </div>
+      </nav>
+    </>
+  );
+}
+
+export default Navbar;
