@@ -17,9 +17,11 @@ function App() {
 
   return (
     <>
-      <div className='text-center address-header'>407 All Saints St</div>
-      <h1 className='text-center main-title'>The Bark</h1>
+      <div className='text-center address-header'>
+        407 All Saints St, Tallahassee, FL 32301
+      </div>
       <Navbar handleNavLinkClick={handleNavLinkClick} />
+      <h1 className='text-center main-title'>The Bark</h1>
       {activeComponent === "about" && <About />}
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}
