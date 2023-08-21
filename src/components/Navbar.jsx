@@ -15,6 +15,16 @@ function Navbar({ handleNavLinkClick }) {
                 <a
                   className='nav-link'
                   href='#'
+                  data-target='hours'
+                  onClick={handleNavLinkClick}
+                >
+                  Hours & Location
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a
+                  className='nav-link'
+                  href='#'
                   data-target='about'
                   onClick={handleNavLinkClick}
                 >
