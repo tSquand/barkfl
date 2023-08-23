@@ -40,7 +40,9 @@ function Hours({ address }) {
         <p className='hours-text'>
           <strong>Sunday</strong> 11:00am - 10:00pm
         </p>
-        <p>Kitchen closes at midnight Wednesday-Saturday!</p>
+        <p>
+          <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
+        </p>
       </div>
     </div>
   );
