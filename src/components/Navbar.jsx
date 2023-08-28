@@ -3,12 +3,8 @@ import "./styles.css";
 function Navbar({ handleNavLinkClick }) {
   return (
     <>
-      <nav
-        className='navbar navbar-expand-lg bg-body-tertiary'
-        data-bs-theme='dark'
-      >
+      <nav className='navbar navbar-expand-lg bg-body-tertiary'>
         <div className='container-fluid'>
-          <a className='navbar-brand'>Bark logo here?</a>
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item'>

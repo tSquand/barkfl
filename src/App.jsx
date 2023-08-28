@@ -31,13 +31,12 @@ function App() {
         </a>
       </div>
       <Navbar handleNavLinkClick={handleNavLinkClick} />
-      <h1 className='text-center main-title'>The Bark</h1>
       {activeComponent === "hours" && <Hours address={address} />}
       {activeComponent === "about" && <About />}
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}
       {activeComponent === "events" && <Events />}
-      {activeComponent === "contact" && <Contact />}
+      {activeComponent === "contact" && <Contact address={address} />}
     </>
   );
 }
