@@ -48,13 +48,7 @@ text-decoration: underline;
     font-size: medium;
   }
 
-  .navbar {
-    background-image: url('../assets/barkmuralresize.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.7);
-  }
+ 
 
 
 

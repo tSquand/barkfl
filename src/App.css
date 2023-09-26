@@ -1,15 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-
+  background-image: url("barkbg.jpg");
+  background-repeat: repeat;
 }
 
 .container {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(17, 173, 69, 0.685);
 }
 
 .hours-page {
-  background-color: white;
+  background-color: rgba(17, 173, 69, 0.685);
   max-width: 45%;
   margin: 0 auto;
   padding-bottom: 2%;
