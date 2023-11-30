@@ -1,0 +1,43 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: rgba(255, 255, 255, 1);
+    --bs-modal-bg: green;
+    padding: 20px;
+    border-radius: 8px;
+    border: 5px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center; /* Center the content */
+    display: flex;
+    flex-direction: column; /* Stack the child elements vertically */
+    align-items: center; /* Center the child elements horizontally */
+    justify-content: center; /* Center the child elements vertically */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  a {
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

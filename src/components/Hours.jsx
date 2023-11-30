@@ -3,7 +3,6 @@ function Hours({ address }) {
   return (
     <div className='container-sm text-center'>
       <div className='hours-page'>
-        <img className='img-fluid' src='barklogo.jpg'></img>
         <p>
           <a
             className='custom-link'
