@@ -15,7 +15,7 @@ function Contact({ address }) {
               <img
                 src='logo-instagram.svg'
                 className='icon'
-                alt='Instagram Logo'
+                alt='Instagram'
               ></img>
             </a>
             <a
@@ -26,7 +26,7 @@ function Contact({ address }) {
               <img
                 src='logo-facebook.svg'
                 className='icon'
-                alt='Facebook Logo'
+                alt='Facebook'
               ></img>
             </a>
           </div>

@@ -12,19 +12,15 @@
   
   .modal-content {
     background: rgba(255, 255, 255, 1);
-    --bs-modal-bg: green;
+    --bs-modal-bg: rgb(209, 216, 209);
     padding: 20px;
-    border-radius: 8px;
-    border: 5px solid #007bff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 40%;
     max-height: 80%;
     overflow-y: auto;
-    text-align: center; /* Center the content */
-    display: flex;
-    flex-direction: column; /* Stack the child elements vertically */
-    align-items: center; /* Center the child elements horizontally */
-    justify-content: center; /* Center the child elements vertically */
+    text-align: center; 
+    align-items: center; 
+    justify-content: center; 
   }
   
   h1 {
