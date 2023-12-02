@@ -17,10 +17,35 @@
   .image-wrapper img {
     height: 300px;
   }
+
+
+  .my-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-image {
+    max-width: 80%;
+    max-height: 80%;
+    transform: scale(2);
+  }
   
   /* Media query for mobile devices */
   @media (max-width: 767px) {
     .container.flyers {
       grid-template-columns: 1fr;
+    }
+
+    .modal-image {
+      max-width: 60%;
+      max-height: 80%;
     }
   }

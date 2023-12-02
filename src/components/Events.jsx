@@ -7,6 +7,8 @@ const photosetId = "72177720310696534";
 
 function Events() {
   const [images, setImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -40,6 +42,15 @@ function Events() {
     return `https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}_n.jpg`;
   };
 
+  const openModal = (image) => {
+    setSelectedImage(buildImageUrl(image));
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   if (isLoading) {
     return <div>...</div>;
   }
@@ -50,7 +61,7 @@ function Events() {
       {images.map((image) => (
         <button
           key={image.id}
-          onClick={() => setSelectedImage(buildImageUrl(image))}
+          onClick={() => openModal(image)}
           className='image-wrapper'
         >
           <img
@@ -60,6 +71,19 @@ function Events() {
           />
         </button>
       ))}
+
+      {showModal && (
+        <div className='my-modal' onClick={closeModal}>
+          <div onClick={(e) => e.stopPropagation()}>
+            <span className='close'>&times;</span>
+            <img
+              src={selectedImage}
+              alt='Selected Image'
+              className='modal-image'
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

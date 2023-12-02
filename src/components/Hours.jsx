@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function Hours({ address }) {
   const phoneNumber = "850-900-5936";
   return (
