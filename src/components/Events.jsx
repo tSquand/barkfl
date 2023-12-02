@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./events.css";
 
 const apiKey = import.meta.env.VITE_REACT_APP_FLICKR_API_KEY;
 const userId = "199024380@N06";
@@ -17,7 +18,20 @@ function Events() {
       .then((data) => {
         const photos = data.photoset.photo;
 
-        setImages(photos);
+        const filteredImages = photos
+          .filter((image) => {
+            const currentDate = new Date();
+            const imageDate = new Date(image.title);
+            return imageDate > currentDate;
+          })
+          .sort((a, b) => {
+            // Sort images based on their dates
+            const dateA = new Date(a.title);
+            const dateB = new Date(b.title);
+            return dateA - dateB;
+          });
+
+        setImages(filteredImages);
         setIsLoading(false);
       });
   }, []);
@@ -31,7 +45,7 @@ function Events() {
   }
 
   return (
-    <div className='container text-center'>
+    <div className='container flyers text-center'>
       <h1>Upcoming Events</h1>
       {images.map((image) => (
         <button

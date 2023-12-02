@@ -1,3 +1,5 @@
+import "./styles.css";
+
 function Contact({ address }) {
   const phoneNumber = "850-900-5936";
   return (
@@ -6,7 +8,7 @@ function Contact({ address }) {
       <div className='row align-items-start'>
         <div>
           <h3>FOLLOW US</h3>
-          <div>
+          <div className='contact-icons'>
             <a
               href='https://www.instagram.com/thebarkfl/?hl=en'
               target='_blank'

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Menu() {
-  const pdfUrl = import.meta.env.BASE_URL + "foodmenu.pdf";
+  const pdfUrl = import.meta.env.BASE_URL + "Bark-Menu.pdf";
 
   return (
     <div className='container text-center'>

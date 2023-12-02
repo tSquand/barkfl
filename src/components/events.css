@@ -1,0 +1,26 @@
+.container.flyers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    text-align: center; /* Center the text */
+  }
+  
+  h1 {
+    grid-column: 1 / -1; /* Span across all columns */
+  }
+  
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    height: 300px;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 767px) {
+    .container.flyers {
+      grid-template-columns: 1fr;
+    }
+  }

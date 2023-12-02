@@ -37,3 +37,20 @@
   a:hover {
     text-decoration: underline;
   }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #080000;
+  }
+
+
+  .order-options {
+    display: flex;
+    justify-content: space-between;
+  }

@@ -55,3 +55,8 @@ text-decoration: underline;
     justify-content: center;
     height: 80vh; 
   }
+
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+  }
