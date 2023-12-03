@@ -3,7 +3,7 @@ import "./styles.css";
 function Hours({ address }) {
   const phoneNumber = "850-900-5936";
   return (
-    <div className='container-sm text-center'>
+    <div className='container text-center'>
       <div className='hours-page'>
         <p>
           <a

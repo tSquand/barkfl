@@ -8,10 +8,6 @@ function Navbar({ handleNavLinkClick }) {
     setIsNavOpen(!isNavOpen);
   };
 
-  const closeNav = () => {
-    setIsNavOpen(false);
-  };
-
   return (
     <nav className='navbar navbar-expand-lg bg-body-tertiary'>
       <div className='container-fluid'>

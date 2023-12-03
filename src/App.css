@@ -7,10 +7,11 @@ body {
 
 .container {
   background-color: rgba(17, 173, 69, 0.685);
+  width: 80%;
+  border: 3px solid;
 }
 
 .hours-page {
-  background-color: rgba(17, 173, 69, 0.685);
   max-width: 45%;
   margin: 0 auto;
   padding-bottom: 2%;
