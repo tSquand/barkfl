@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-image: url("barkbg.jpg");
   background-repeat: repeat;
+  padding-top: 68px;
 }
 
 .container {

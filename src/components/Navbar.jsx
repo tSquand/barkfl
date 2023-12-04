@@ -9,7 +9,7 @@ function Navbar({ handleNavLinkClick }) {
   };
 
   return (
-    <nav className='navbar navbar-expand-lg bg-body-tertiary'>
+    <nav className='navbar navbar-expand-lg bg-body-tertiary navbar-fixed'>
       <div className='container-fluid'>
         {/* Brand/logo */}
         <a className='navbar-brand' href='#'>

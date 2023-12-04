@@ -23,16 +23,6 @@ function App() {
 
   return (
     <>
-      <div className='text-center address-header'>
-        <a
-          className='custom-link'
-          href={`https://www.google.com/maps/search/?api=1&query=${address}`}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          507 All Saints St, Tallahassee, FL 32301
-        </a>
-      </div>
       {showModal && (
         <SplashModal onClose={() => setShowModal(false)}></SplashModal>
       )}
