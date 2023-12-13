@@ -42,16 +42,6 @@ function Navbar({ handleNavLinkClick }) {
               <a
                 className='nav-link'
                 href='#'
-                data-target='about'
-                onClick={handleNavLinkClick}
-              >
-                About Us
-              </a>
-            </li>
-            <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
                 data-target='menu'
                 onClick={handleNavLinkClick}
               >

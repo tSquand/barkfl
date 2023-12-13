@@ -9,7 +9,7 @@ function Menu() {
         title='PDF Viewer'
         src={pdfUrl}
         width='80%'
-        height='900px' // Adjust the height as needed
+        height='900px'
       ></iframe>
     </div>
   );

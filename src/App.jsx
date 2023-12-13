@@ -28,7 +28,6 @@ function App() {
       )}
       <Navbar handleNavLinkClick={handleNavLinkClick} />
       {activeComponent === "hours" && <Hours address={address} />}
-      {activeComponent === "about" && <About />}
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}
       {activeComponent === "events" && <Events />}
