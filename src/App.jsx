@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import About from "./components/About.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Events from "./components/Events.jsx";
 import Menu from "./components/Menu.jsx";

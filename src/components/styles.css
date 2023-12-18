@@ -48,3 +48,22 @@ text-decoration: underline;
     z-index: 1000;
     top: 0;
   }
+
+  .welcome-banner {
+    width: 100%;
+  }
+
+  .square {
+    border: 2px solid black;
+  }
+
+  .square img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .squares-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
