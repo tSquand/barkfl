@@ -29,7 +29,7 @@ function Hours({ address }) {
   return (
     <div>
       <img
-        src='welcome-image.jpg'
+        src='bark-welcome.jpg'
         className='welcome-banner'
         alt='welcome'
       ></img>

@@ -57,9 +57,10 @@ text-decoration: underline;
     border: 2px solid black;
   }
 
-  .square img {
-    max-width: 100%;
-    height: auto;
+  .square-image {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Set the same height as the width for a square */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
 
   .squares-container {
