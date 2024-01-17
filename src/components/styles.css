@@ -68,3 +68,14 @@ text-decoration: underline;
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  .menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  .menu-heading a {
+    margin: 0 10px; /* Adjust the margin as needed for spacing between text and icons */
+  }
