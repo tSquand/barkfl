@@ -7,22 +7,22 @@ function Hours({ address }) {
   const squaresData = [
     {
       imageUrl: "menu-pic.jpg",
-      text: "View the menu",
+      text: "Menu \u2192",
       link: "/square1",
     },
     {
       imageUrl: "brunch-pic.jpg",
-      text: "View the brunch menu",
+      text: "Brunch menu \u2192",
       link: "/square2",
     },
     {
       imageUrl: "catering-pic.jpg",
-      text: "Catering",
+      text: "Catering \u2192",
       link: "/square3",
     },
     {
       imageUrl: "event-pic.jpg",
-      text: "Events",
+      text: "Events \u2192",
       link: "/square4",
     },
   ];
@@ -33,6 +33,9 @@ function Hours({ address }) {
         className='welcome-banner'
         alt='welcome'
       ></img>
+      <div className='ordering-links'>
+        <p>doordash and square links here?</p>
+      </div>
       <div className='squares-container'>
         {squaresData.map((square, index) => (
           <Square key={index} {...square} />

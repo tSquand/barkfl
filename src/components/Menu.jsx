@@ -8,7 +8,7 @@ function Menu() {
     <div>
       <div className='container text-center'>
         <h1 className='menu-heading'>
-          Specials posted daily on{" "}
+          Specials posted daily{" "}
           <a
             href='https://www.instagram.com/thebarkfl/?hl=en'
             target='_blank'
@@ -19,8 +19,7 @@ function Menu() {
               className='icon'
               alt='Instagram'
             ></img>
-          </a>{" "}
-          and{" "}
+          </a>
           <a
             href='https://www.facebook.com/TheBarkFL'
             target='_blank'

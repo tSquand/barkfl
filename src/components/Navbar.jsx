@@ -12,7 +12,12 @@ function Navbar({ handleNavLinkClick }) {
     <nav className='navbar navbar-expand-lg bg-body-tertiary navbar-fixed'>
       <div className='container-fluid'>
         {/* Brand/logo */}
-        <a className='navbar-brand' href='#'>
+        <a
+          className='navbar-brand'
+          href='#'
+          data-target='hours'
+          onClick={handleNavLinkClick}
+        >
           The Bark
         </a>
 
@@ -28,16 +33,6 @@ function Navbar({ handleNavLinkClick }) {
               isNavOpen ? "centered-nav-items" : ""
             }`}
           >
-            <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
-                data-target='hours'
-                onClick={handleNavLinkClick}
-              >
-                Hours & Location
-              </a>
-            </li>
             <li className='nav-item'>
               <a
                 className='nav-link'

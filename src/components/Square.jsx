@@ -5,7 +5,7 @@ function Square({ imageUrl, text, link }) {
     <div className='square'>
       <a href={link} target='_blank' rel='noopener noreferrer'>
         <img src={imageUrl} alt='Square' className='square-image' />
-        <p>{text}</p>
+        <p className='square-text'>{text}</p>
       </a>
     </div>
   );

@@ -55,11 +55,19 @@ text-decoration: underline;
 
   .square {
     border: 2px solid black;
+    text-align: center;
+    background-color: rgb(143, 204, 143);
   }
 
+  .square a {
+    text-decoration: none;
+    margin-top: 0;
+  }
+
+
   .square-image {
-    width: 250px; /* Adjust the width as needed */
-    height: 250px; /* Set the same height as the width for a square */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Set the same height as the width for a square */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
 
@@ -67,6 +75,16 @@ text-decoration: underline;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .square p {
+    margin: 10px 0;
+  }
+
+  .square p.square-text {
+    color: #1f2f43;
+    font-size: 1.3em;
+    font-weight: bold;
   }
 
   .menu-heading {
@@ -79,3 +97,5 @@ text-decoration: underline;
   .menu-heading a {
     margin: 0 10px; /* Adjust the margin as needed for spacing between text and icons */
   }
+
+ 
