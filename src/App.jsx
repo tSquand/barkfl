@@ -6,31 +6,34 @@ import Menu from "./components/Menu.jsx";
 import Catering from "./components/Catering.jsx";
 import Contact from "./components/Contact.jsx";
 import Hours from "./components/Hours.jsx";
-import SplashModal from "./components/SplashModal.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
-  const [showModal, setShowModal] = useState(true);
   const [activeComponent, setActiveComponent] = useState("hours");
 
   const handleNavLinkClick = (event) => {
     const target = event.target.getAttribute("data-target");
     setActiveComponent(target);
-    setShowModal(false);
+  };
+
+  const handleSquareClick = (link) => {
+    console.log("Clicked square with link:", link);
+    setActiveComponent(link);
   };
 
   const address = "507+All+Saints+St,+Tallahassee,+FL,+32303";
 
   return (
     <>
-      {showModal && (
-        <SplashModal onClose={() => setShowModal(false)}></SplashModal>
-      )}
       <Navbar handleNavLinkClick={handleNavLinkClick} />
-      {activeComponent === "hours" && <Hours address={address} />}
+      {activeComponent === "hours" && (
+        <Hours handleSquareClick={handleSquareClick} />
+      )}
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}
       {activeComponent === "events" && <Events />}
       {activeComponent === "contact" && <Contact address={address} />}
+      <Footer />
     </>
   );
 }

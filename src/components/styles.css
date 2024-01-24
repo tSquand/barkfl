@@ -53,6 +53,8 @@ text-decoration: underline;
     width: 100%;
   }
 
+
+
   .square {
     border: 2px solid black;
     text-align: center;
@@ -98,4 +100,13 @@ text-decoration: underline;
     margin: 0 10px; /* Adjust the margin as needed for spacing between text and icons */
   }
 
- 
+.footer {
+  background-color: rgb(82, 148, 184);
+  padding: 20px 0;
+  color: #1f2f43;
+  margin-top: auto;
+}
+
+.footer-content {
+  flex: 1;
+}

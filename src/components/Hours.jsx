@@ -1,31 +1,30 @@
 import "./styles.css";
 import Square from "./Square";
 
-function Hours({ address }) {
-  const phoneNumber = "850-900-5936";
-
+function Hours({ handleSquareClick }) {
   const squaresData = [
     {
       imageUrl: "menu-pic.jpg",
       text: "Menu \u2192",
-      link: "/square1",
+      link: "menu",
     },
     {
       imageUrl: "brunch-pic.jpg",
       text: "Brunch menu \u2192",
-      link: "/square2",
+      link: "menu",
     },
     {
       imageUrl: "catering-pic.jpg",
       text: "Catering \u2192",
-      link: "/square3",
+      link: "catering",
     },
     {
       imageUrl: "event-pic.jpg",
       text: "Events \u2192",
-      link: "/square4",
+      link: "events",
     },
   ];
+
   return (
     <div>
       <img
@@ -38,53 +37,13 @@ function Hours({ address }) {
       </div>
       <div className='squares-container'>
         {squaresData.map((square, index) => (
-          <Square key={index} {...square} />
+          <Square
+            key={index}
+            {...square}
+            onClick={() => handleSquareClick(square.link)}
+          />
         ))}
       </div>
-      <div className='container text-center'>
-        <div className='hours-page'>
-          <p>
-            <a
-              className='custom-link'
-              href={`https://www.google.com/maps/search/?api=1&query=${address}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              507 All Saints St, Tallahassee, FL, 32301
-            </a>
-          </p>
-          <p>
-            <a className='phone-link' href={`tel:${phoneNumber}`}>
-              (850) 900-5936
-            </a>
-          </p>
-          <p className='hours-text'>
-            <strong>Monday</strong> CLOSED
-          </p>
-          <p className='hours-text'>
-            <strong>Tuesday</strong> 11:00am - 10:00pm
-          </p>
-          <p className='hours-text'>
-            <strong>Wednesday</strong> 11:00am - 2:00am
-          </p>
-          <p className='hours-text'>
-            <strong>Thursday</strong> 11:00am - 2:00am
-          </p>
-          <p className='hours-text'>
-            <strong>Friday</strong> 11:00am - 2:00am
-          </p>
-          <p className='hours-text'>
-            <strong>Saturday</strong> 11:00am - 2:00am
-          </p>
-          <p className='hours-text'>
-            <strong>Sunday</strong> 11:00am - 10:00pm
-          </p>
-          <p>
-            <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
-          </p>
-        </div>
-      </div>
-      What goes here
     </div>
   );
 }

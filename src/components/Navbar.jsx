@@ -70,7 +70,7 @@ function Navbar({ handleNavLinkClick }) {
                 data-target='contact'
                 onClick={handleNavLinkClick}
               >
-                Contact Us
+                Contact
               </a>
             </li>
           </ul>
