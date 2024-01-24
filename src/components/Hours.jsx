@@ -11,7 +11,7 @@ function Hours({ handleSquareClick }) {
     {
       imageUrl: "brunch-pic.jpg",
       text: "Brunch menu \u2192",
-      link: "menu",
+      link: "brunch",
     },
     {
       imageUrl: "catering-pic.jpg",

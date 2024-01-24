@@ -35,6 +35,7 @@ function Menu() {
           height='900px'
         ></iframe>
         <iframe
+          id='brunchIframe'
           title='PDF Viewer'
           src={brunchUrl}
           width='80%'

@@ -17,8 +17,20 @@ function App() {
   };
 
   const handleSquareClick = (link) => {
-    console.log("Clicked square with link:", link);
-    setActiveComponent(link);
+    if (link === "brunch") {
+      setActiveComponent("menu");
+
+      setTimeout(() => {
+        const brunchIframeElement = document.getElementById("brunchIframe");
+        if (brunchIframeElement) {
+          const brunchIframe = brunchIframeElement.offsetTop;
+          window.scrollTo({ top: brunchIframeElement, behavior: "smooth" });
+        }
+      }, 0);
+    } else {
+      setActiveComponent(link);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const address = "507+All+Saints+St,+Tallahassee,+FL,+32303";
