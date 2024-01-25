@@ -44,7 +44,6 @@ function App() {
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}
       {activeComponent === "events" && <Events />}
-      {activeComponent === "contact" && <Contact address={address} />}
       <Footer />
     </>
   );

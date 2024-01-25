@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-content'>
         <div className='row'>
-          <div className='col-md-6 text-center'>
+          <div className='col-md-4 text-center'>
             <p className='hours-text'>
               <a
                 className='custom-link'
@@ -40,9 +40,59 @@ const Footer = () => {
               <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
             </p>
           </div>
-          <div className='col-md-6 text-center'>
+          <div className='col-md-4 text-center'>
             <img src='asset3.png' className='bark-logo-img'></img>
+          </div>
+          <div className='col-md-4 text-center'>
+            <p className='footer-email'>
+              <a className='custom-link' href='mailto:thebarkfl@gmail.com'>
+                <strong>thebarkfl@gmail.com</strong>
+              </a>{" "}
+              - General inquiry
+            </p>
+            <p className='footer-email'>
+              <a className='custom-link' href='mailto:thebarkbooking@gmail.com'>
+                <strong>thebarkbooking@gmail.com</strong>
+              </a>{" "}
+              - Event booking
+            </p>
+            <p className='footer-email'>
+              <a
+                className='custom-link'
+                href='mailto:thebarkcatering@gmail.com'
+              >
+                <strong>thebarkcatering@gmail.com</strong>
+              </a>{" "}
+              - Catering
+            </p>
+            <p className='footer-email'>
+              <a
+                className='custom-link'
+                href='mailto:harvestspoonfl@gmail.com.com'
+              >
+                <strong>harvestspoonfl@gmail.com</strong>
+              </a>{" "}
+              - Harvest Spoon Catering
+            </p>
             <div className='footer-icons'>
+              <a
+                href='https://thebarkfl.square.site/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img src='logo-square.svg' className='icon' alt='Square'></img>
+              </a>
+              <a
+                href='https://www.doordash.com/ja-JP/store/the-bark-tallahassee-352754/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src='logo-doordash.svg'
+                  className='icon'
+                  alt='Doordash'
+                ></img>
+              </a>
               <a
                 href='https://www.instagram.com/thebarkfl/?hl=en'
                 target='_blank'

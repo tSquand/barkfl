@@ -76,19 +76,6 @@ function Navbar({ handleNavLinkClick }) {
                 Upcoming Events
               </a>
             </li>
-            <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
-                data-target='contact'
-                onClick={(e) => {
-                  handleNavLinkClick(e);
-                  closeNav();
-                }}
-              >
-                Contact
-              </a>
-            </li>
           </ul>
         </div>
       </div>

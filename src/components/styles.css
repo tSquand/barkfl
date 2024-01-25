@@ -145,3 +145,11 @@ body .navbar .nav-link {
 .harvest-link {
     font-size: 1.2em;
 }
+
+.footer-email {
+    color: white;
+}
+
+.footer-icons a{
+    margin-right: 5px;
+}
