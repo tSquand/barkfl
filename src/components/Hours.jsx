@@ -33,10 +33,6 @@ function Hours({ handleSquareClick }) {
         alt='welcome'
       ></img>
 
-      <div className='online-buttons text-center'>
-        <button>Doordash</button>
-        <button>Square</button>
-      </div>
       <div className='squares-container'>
         {squaresData.map((square, index) => (
           <Square

@@ -20,6 +20,7 @@ function Navbar({ handleNavLinkClick }) {
         >
           The Bark
         </a>
+
         {/* Toggle button for mobile */}
         <button className='navbar-toggler' type='button' onClick={toggleNav}>
           <span className='navbar-toggler-icon'></span>
