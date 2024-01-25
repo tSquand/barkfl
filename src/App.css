@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("barkbg.jpg");
+  background-image: url("/public/barkbg.jpg");
   background-repeat: repeat;
   padding-top: 56px;
   overflow-x: hidden;

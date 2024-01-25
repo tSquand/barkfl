@@ -54,17 +54,6 @@ function Contact({ address }) {
               thebarkcatering@gmail.com
             </a>
           </p>
-          <h3>ADDRESS</h3>
-          <p>
-            <a
-              className='custom-link'
-              href={`https://www.google.com/maps/search/?api=1&query=${address}`}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              507 All Saints St, Tallahassee, FL, 32301
-            </a>
-          </p>
         </div>
       </div>
     </div>

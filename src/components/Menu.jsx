@@ -1,8 +1,8 @@
 import React from "react";
 
 function Menu() {
-  const pdfUrl = import.meta.env.BASE_URL + "Bark-Menu.pdf";
-  const brunchUrl = import.meta.env.BASE_URL + "brunch-menu.pdf";
+  const pdfUrl = import.meta.env.BASE_URL + "Bark-Menu.pdf#view=fitH";
+  const brunchUrl = import.meta.env.BASE_URL + "brunch-menu.pdf#view=fitH";
 
   return (
     <div>
