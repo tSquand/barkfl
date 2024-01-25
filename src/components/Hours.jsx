@@ -28,7 +28,7 @@ function Hours({ handleSquareClick }) {
   return (
     <div>
       <img
-        src='bark-welcome.jpg'
+        src='bark-welcomev2.jpg'
         className='welcome-banner'
         alt='welcome'
       ></img>

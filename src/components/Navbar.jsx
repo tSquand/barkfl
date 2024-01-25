@@ -8,6 +8,10 @@ function Navbar({ handleNavLinkClick }) {
     setIsNavOpen(!isNavOpen);
   };
 
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
   return (
     <nav className='navbar navbar-expand-lg navbar-fixed'>
       <div className='container-fluid'>
@@ -38,7 +42,10 @@ function Navbar({ handleNavLinkClick }) {
                 className='nav-link'
                 href='#'
                 data-target='menu'
-                onClick={handleNavLinkClick}
+                onClick={(e) => {
+                  handleNavLinkClick(e);
+                  closeNav();
+                }}
               >
                 Menu
               </a>
@@ -48,7 +55,10 @@ function Navbar({ handleNavLinkClick }) {
                 className='nav-link'
                 href='#'
                 data-target='catering'
-                onClick={handleNavLinkClick}
+                onClick={(e) => {
+                  handleNavLinkClick(e);
+                  closeNav();
+                }}
               >
                 Catering
               </a>
@@ -58,7 +68,10 @@ function Navbar({ handleNavLinkClick }) {
                 className='nav-link'
                 href='#'
                 data-target='events'
-                onClick={handleNavLinkClick}
+                onClick={(e) => {
+                  handleNavLinkClick(e);
+                  closeNav();
+                }}
               >
                 Upcoming Events
               </a>
@@ -68,7 +81,10 @@ function Navbar({ handleNavLinkClick }) {
                 className='nav-link'
                 href='#'
                 data-target='contact'
-                onClick={handleNavLinkClick}
+                onClick={(e) => {
+                  handleNavLinkClick(e);
+                  closeNav();
+                }}
               >
                 Contact
               </a>

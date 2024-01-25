@@ -9,6 +9,12 @@ function Catering() {
         width='80%'
         height='900px'
       ></iframe>
+      <p className='text-center harvest-link'>
+        More catering options from the team at BARK found at{" "}
+        <a className='custom-link' href='https://harvestspoonfl.com/'>
+          <strong> harvestspoonfl.com!</strong>
+        </a>
+      </p>
     </div>
   );
 }

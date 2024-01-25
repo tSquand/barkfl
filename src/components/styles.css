@@ -55,6 +55,18 @@ text-decoration: underline;
   font-weight: bold;
 }
 
+body .navbar-brand {
+    color: white!important;
+}
+
+body .navbar-brand:hover {
+    color: white!important;
+}
+
+body .navbar .nav-link {
+    color: white;
+}
+
 
 .welcome-banner {
     width: 100%;
@@ -126,3 +138,10 @@ text-decoration: underline;
   max-height: auto;
 }
 
+.hours-text {
+    color: white;
+}
+
+.harvest-link {
+    font-size: 1.2em;
+}

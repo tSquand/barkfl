@@ -20,7 +20,7 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a className='phone-link' href={`tel:${phoneNumber}`}>
+              <a className='phone-link hours-text' href={`tel:${phoneNumber}`}>
                 (850) 900-5936
               </a>
             </p>
@@ -36,7 +36,7 @@ const Footer = () => {
             <p className='hours-text'>
               <strong>Sunday</strong> 11:00am - 10:00pm
             </p>
-            <p>
+            <p className='hours-text'>
               <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
             </p>
           </div>
