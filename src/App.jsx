@@ -24,7 +24,7 @@ function App() {
         const brunchIframeElement = document.getElementById("brunchIframe");
         if (brunchIframeElement) {
           const brunchIframe = brunchIframeElement.offsetTop;
-          window.scrollTo({ top: brunchIframeElement, behavior: "smooth" });
+          window.scrollTo({ top: brunchIframe, behavior: "smooth" });
         }
       }, 0);
     } else {

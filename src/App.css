@@ -3,27 +3,15 @@ body {
   padding: 0;
   background-image: url("barkbg.jpg");
   background-repeat: repeat;
-  padding-top: 68px;
-  height: 100%;
+  padding-top: 56px;
   overflow-x: hidden;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 .container {
   background-color: rgb(143, 204, 143);
   width: 80%;
   border: 3px solid;
-}
-
-.hours-page {
-  max-width: 45%;
-  margin: 0 auto;
-  padding-bottom: 2%;
 }
 
 
@@ -41,8 +29,3 @@ body {
   height: 45px;
 }
 
-@media (max-width: 800px) {
-  .hours-page {
-    max-width: 80%;
-  }
-}

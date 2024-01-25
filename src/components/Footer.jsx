@@ -40,9 +40,39 @@ const Footer = () => {
               <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
             </p>
           </div>
-          <div className='col-md-6'>
-            <h4>Follow Us</h4>
-            {/* Add your social media links/icons here */}
+          <div className='col-md-6 text-center'>
+            <img src='asset3.png' className='bark-logo-img'></img>
+            <div className='footer-icons'>
+              <a
+                href='https://www.instagram.com/thebarkfl/?hl=en'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src='logo-instagram.svg'
+                  className='icon'
+                  alt='Instagram'
+                ></img>
+              </a>
+              <a
+                href='https://www.facebook.com/TheBarkFL'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src='logo-facebook.svg'
+                  className='icon'
+                  alt='Facebook'
+                ></img>
+              </a>
+              <a
+                href='mailto:thebarkfl@gmail.com'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img src='logo-email.svg' className='icon' alt='Email'></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>

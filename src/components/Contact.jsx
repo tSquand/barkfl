@@ -44,6 +44,16 @@ function Contact({ address }) {
               thebarkfl@gmail.com
             </a>
           </p>
+          <p>
+            <a className='custom-link' href='mailto:thebarkbooking@gmail.com'>
+              thebarkbooking@gmail.com
+            </a>
+          </p>
+          <p>
+            <a className='custom-link' href='mailto:thebarkcatering@gmail.com'>
+              thebarkcatering@gmail.com
+            </a>
+          </p>
           <h3>ADDRESS</h3>
           <p>
             <a

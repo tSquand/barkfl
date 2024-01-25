@@ -17,96 +17,115 @@ text-decoration: underline;
     padding: 0;
     background: none;
     cursor: pointer;
-  }
+}
   
-  .sort-container {
+.sort-container {
     position: absolute;
     top: 0px;
     right: 5px;
     text-align: right;
-    }
-  .sort-container label {
-    font-size: medium;
-  }
+}
 
-  .centered-nav-items {
+.sort-container label {
+    font-size: medium;
+}
+
+.centered-nav-items {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 80vh; 
-  }
+}
 
-  .contact-icons {
+.contact-icons {
     display: flex;
     justify-content: center;
-  }
+}
 
-  .navbar {
+.navbar {
     position: fixed !important;
     width: 100%;
     z-index: 1000;
     top: 0;
-  }
+    background-color: rgb(82, 148, 184);
+}
 
-  .welcome-banner {
+.navbar-nav {
+  font-weight: bold;
+}
+
+.welcome-banner {
     width: 100%;
-  }
+}
 
-
-
-  .square {
+.square {
     border: 2px solid black;
     text-align: center;
     background-color: rgb(143, 204, 143);
-  }
+    margin-top: 20px;
+}
 
-  .square a {
+.square a {
     text-decoration: none;
     margin-top: 0;
-  }
+}
 
-
-  .square-image {
+.square-image {
     width: 400px; /* Adjust the width as needed */
     height: 400px; /* Set the same height as the width for a square */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
+}
 
-  .squares-container {
+.squares-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
+}
 
-  .square p {
+.square p {
     margin: 10px 0;
-  }
+}
 
-  .square p.square-text {
+.square p.square-text {
     color: #1f2f43;
     font-size: 1.3em;
     font-weight: bold;
-  }
+}
 
-  .menu-heading {
+.menu-heading {
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-  }
+}
   
-  .menu-heading a {
+.menu-heading a {
     margin: 0 10px; /* Adjust the margin as needed for spacing between text and icons */
-  }
+}
 
 .footer {
   background-color: rgb(82, 148, 184);
   padding: 20px 0;
   color: #1f2f43;
   margin-top: auto;
+  width: 100%;
 }
 
 .footer-content {
   flex: 1;
 }
+
+.footer-icons {
+  margin-top: 20px;
+}
+
+.bark-logo-img {
+  max-width: 350px;
+  max-height: auto;
+}
+
+.ordering-section {
+  background-color: rgb(232,125,161);
+}
+

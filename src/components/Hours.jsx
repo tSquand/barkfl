@@ -10,7 +10,7 @@ function Hours({ handleSquareClick }) {
     },
     {
       imageUrl: "brunch-pic.jpg",
-      text: "Brunch menu \u2192",
+      text: "Brunch Menu \u2192",
       link: "brunch",
     },
     {
@@ -32,8 +32,10 @@ function Hours({ handleSquareClick }) {
         className='welcome-banner'
         alt='welcome'
       ></img>
-      <div className='ordering-links'>
-        <p>doordash and square links here?</p>
+
+      <div className='online-buttons text-center'>
+        <button>Doordash</button>
+        <button>Square</button>
       </div>
       <div className='squares-container'>
         {squaresData.map((square, index) => (
@@ -49,3 +51,35 @@ function Hours({ handleSquareClick }) {
 }
 
 export default Hours;
+
+/*
+      <div className='ordering-section container text-center'>
+        <div className='row'>
+          <h1>Order Online:</h1>
+          <div className='order-options'>
+            <div className='col-md-6'>
+              <a
+                href='https://thebarkfl.square.site/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img src='logo-square.svg' className='icon' alt='Square'></img>
+              </a>
+            </div>
+            <div className='col-md-6'>
+              <a
+                href='https://www.doordash.com/ja-JP/store/the-bark-tallahassee-352754/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img
+                  src='logo-doordash.svg'
+                  className='icon'
+                  alt='Doordash'
+                ></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      */

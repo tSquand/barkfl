@@ -9,7 +9,7 @@ function Navbar({ handleNavLinkClick }) {
   };
 
   return (
-    <nav className='navbar navbar-expand-lg bg-body-tertiary navbar-fixed'>
+    <nav className='navbar navbar-expand-lg navbar-fixed'>
       <div className='container-fluid'>
         {/* Brand/logo */}
         <a
@@ -20,7 +20,6 @@ function Navbar({ handleNavLinkClick }) {
         >
           The Bark
         </a>
-
         {/* Toggle button for mobile */}
         <button className='navbar-toggler' type='button' onClick={toggleNav}>
           <span className='navbar-toggler-icon'></span>
