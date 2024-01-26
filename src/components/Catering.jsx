@@ -1,5 +1,5 @@
 function Catering() {
-  const pdfUrl = import.meta.env.BASE_URL + "catering-menu.pdf";
+  const pdfUrl = import.meta.env.BASE_URL + "catering-menu.pdf#view=fitH";
 
   return (
     <div className='container text-center'>
