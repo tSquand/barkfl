@@ -4,12 +4,11 @@ import Navbar from "./components/Navbar.jsx";
 import Events from "./components/Events.jsx";
 import Menu from "./components/Menu.jsx";
 import Catering from "./components/Catering.jsx";
-import Contact from "./components/Contact.jsx";
-import Hours from "./components/Hours.jsx";
+import Home from "./components/Home.jsx";
 import Footer from "./components/Footer.jsx";
 
 function App() {
-  const [activeComponent, setActiveComponent] = useState("hours");
+  const [activeComponent, setActiveComponent] = useState("home");
 
   const handleNavLinkClick = (event) => {
     const target = event.target.getAttribute("data-target");
@@ -38,8 +37,8 @@ function App() {
   return (
     <>
       <Navbar handleNavLinkClick={handleNavLinkClick} />
-      {activeComponent === "hours" && (
-        <Hours handleSquareClick={handleSquareClick} />
+      {activeComponent === "home" && (
+        <Home handleSquareClick={handleSquareClick} />
       )}
       {activeComponent === "menu" && <Menu />}
       {activeComponent === "catering" && <Catering />}

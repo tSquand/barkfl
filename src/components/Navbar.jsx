@@ -19,7 +19,7 @@ function Navbar({ handleNavLinkClick }) {
         <a
           className='navbar-brand'
           href='#'
-          data-target='hours'
+          data-target='home'
           onClick={handleNavLinkClick}
         >
           The Bark
