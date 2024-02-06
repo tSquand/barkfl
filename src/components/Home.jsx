@@ -41,12 +41,13 @@ function Home({ handleSquareClick }) {
               Established in 2017, the BARK is a vegetarian restaurant, venue
               space, and "fine dive bar" in Tallahassee, Florida. We serve
               homemade food with local produce and freshly baked bread, as well
-              as craft cocktails and world-class PBR.
-            </h4>{" "}
-            <h3>
-              We have rotating food, drink, and dessert specials - call or check
-              our social media to learn what's cookin' today!
-            </h3>
+              as craft cocktails and world-class PBR.{" "}
+              <strong>
+                {" "}
+                We have rotating food, drink, and dessert specials - call or
+                check our social media to learn what's cookin' today!
+              </strong>
+            </h4>
             <h2 className='menu-heading'>
               <a
                 href='https://www.instagram.com/thebarkfl/?hl=en'
@@ -71,20 +72,11 @@ function Home({ handleSquareClick }) {
                 ></img>
               </a>
             </h2>
+            <h4>Come by for karaoke, live music, art markets, and more.</h4>
             <h4>
-              Come by for karaoke every Wednesday, live music, art markets, and
-              more. (hyperlink to upcoming events tab)
-            </h4>
-            <h4>
-              {" "}
-              "There's always something fun happening at The Bark, unless
-              there's not."
-            </h4>
-            <h4>Outdoor seating is available on our patio and Barking Lot. </h4>
-            <h4>
-              {" "}
-              If we aren't answering the phone, it's probably monday (we're
-              closed) or there's a show (it's loud)
+              Outdoor seating is available on our patio and Barking Lot. If we
+              aren't answering the phone, it's probably monday (we're closed) or
+              there's a show (it's loud)
             </h4>
             <button className='order-online-button'>Order Online</button>
           </div>
@@ -108,35 +100,3 @@ function Home({ handleSquareClick }) {
 }
 
 export default Home;
-
-/*
-      <div className='ordering-section container text-center'>
-        <div className='row'>
-          <h1>Order Online:</h1>
-          <div className='order-options'>
-            <div className='col-md-6'>
-              <a
-                href='https://thebarkfl.square.site/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img src='logo-square.svg' className='icon' alt='Square'></img>
-              </a>
-            </div>
-            <div className='col-md-6'>
-              <a
-                href='https://www.doordash.com/ja-JP/store/the-bark-tallahassee-352754/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img
-                  src='logo-doordash.svg'
-                  className='icon'
-                  alt='Doordash'
-                ></img>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      */
