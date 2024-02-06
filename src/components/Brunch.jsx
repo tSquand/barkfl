@@ -1,14 +1,14 @@
 import React from "react";
 
-function Menu() {
-  const pdfUrl = import.meta.env.BASE_URL + "Bark-Menu.pdf#view=fitH";
-
+function Brunch() {
+  const brunchUrl = import.meta.env.BASE_URL + "brunch-menu.pdf#view=fitH";
   return (
     <div>
       <div className='container text-center'>
         <iframe
+          id='brunchIframe'
           title='PDF Viewer'
-          src={pdfUrl}
+          src={brunchUrl}
           width='80%'
           height='900px'
         ></iframe>
@@ -17,4 +17,4 @@ function Menu() {
   );
 }
 
-export default Menu;
+export default Brunch;

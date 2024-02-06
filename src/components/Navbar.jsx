@@ -17,15 +17,9 @@ function Navbar({ handleNavLinkClick }) {
     <nav className='navbar navbar-expand-lg navbar-fixed'>
       <div className='container-fluid'>
         {/* Brand/logo */}
-        <a
-          className='navbar-brand'
-          href='#'
-          data-target='home'
-          onClick={handleNavLinkClick}
-        >
+        <Link to='/' className='navbar-brand'>
           The Bark
-        </a>
-
+        </Link>
         {/* Toggle button for mobile */}
         <button className='navbar-toggler' type='button' onClick={toggleNav}>
           <span className='navbar-toggler-icon'></span>
@@ -39,43 +33,29 @@ function Navbar({ handleNavLinkClick }) {
             }`}
           >
             <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
-                data-target='menu'
-                onClick={(e) => {
-                  handleNavLinkClick(e);
-                  closeNav();
-                }}
-              >
+              <Link to='/menu' className='nav-link' onClick={closeNav}>
                 Menu
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
-                data-target='catering'
-                onClick={(e) => {
-                  handleNavLinkClick(e);
-                  closeNav();
-                }}
-              >
+              <Link to='/brunch' className='nav-link' onClick={closeNav}>
+                Brunch
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/nightmenu' className='nav-link' onClick={closeNav}>
+                Night Menu
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/catering' className='nav-link' onClick={closeNav}>
                 Catering
-              </a>
+              </Link>
             </li>
             <li className='nav-item'>
-              <a
-                className='nav-link'
-                href='#'
-                data-target='events'
-                onClick={(e) => {
-                  handleNavLinkClick(e);
-                  closeNav();
-                }}
-              >
-                Upcoming Events
-              </a>
+              <Link to='/events' className='nav-link' onClick={closeNav}>
+                Events
+              </Link>
             </li>
           </ul>
         </div>

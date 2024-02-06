@@ -1,17 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Square({ imageUrl, text, link, onClick }) {
-  const handleClick = (event) => {
-    event.preventDefault();
-    onClick(link);
-  };
-
+function Square({ imageUrl, text, link }) {
   return (
-    <div className='square' onClick={handleClick}>
-      <a href={link} rel='noopener noreferrer'>
+    <div className='square'>
+      <Link to={link}>
         <img src={imageUrl} alt='Square' className='square-image' />
         <p className='square-text'>{text}</p>
-      </a>
+      </Link>
     </div>
   );
 }

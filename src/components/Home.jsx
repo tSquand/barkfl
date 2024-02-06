@@ -1,7 +1,8 @@
 import "./styles.css";
 import Square from "./Square";
+import { Link } from "react-router-dom";
 
-function Home({ handleSquareClick }) {
+function Home({}) {
   const squaresData = [
     {
       imageUrl: "menu-pic.jpg",
@@ -38,7 +39,7 @@ function Home({ handleSquareClick }) {
           <div className='col-md-6 about-content text-center'>
             <h1>Welcome to The BARK</h1>
             <h4>
-              Established in 2017, the BARK is a vegetarian restaurant, venue
+              Established in 2017, The BARK is a vegetarian restaurant, venue
               space, and "fine dive bar" in Tallahassee, Florida. We serve
               homemade food with local produce and freshly baked bread, as well
               as craft cocktails and world-class PBR.{" "}
@@ -72,7 +73,10 @@ function Home({ handleSquareClick }) {
                 ></img>
               </a>
             </h2>
-            <h4>Come by for karaoke, live music, art markets, and more.</h4>
+            <h4>
+              Come by for karaoke, live music, art markets, and{" "}
+              <Link to='/events'> more.</Link>
+            </h4>
             <h4>
               Outdoor seating is available on our patio and Barking Lot. If we
               aren't answering the phone, it's probably monday (we're closed) or
@@ -88,11 +92,7 @@ function Home({ handleSquareClick }) {
 
       <div className='squares-container'>
         {squaresData.map((square, index) => (
-          <Square
-            key={index}
-            {...square}
-            onClick={() => handleSquareClick(square.link)}
-          />
+          <Square key={index} {...square} />
         ))}
       </div>
     </div>
