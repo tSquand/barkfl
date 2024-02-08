@@ -2,7 +2,7 @@ import "./styles.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Navbar({ handleNavLinkClick }) {
+function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {

@@ -34,15 +34,15 @@ function Home({}) {
         alt='welcome'
       ></img>
 
-      <div className='about-section'>
+      <div className='about-section container-fluid'>
         <div className='row'>
           <div className='col-md-6 about-content text-center'>
             <h1>Welcome to The BARK</h1>
             <h4>
-              Established in 2017, The BARK is a vegetarian restaurant, venue
-              space, and "fine dive bar" in Tallahassee, Florida. We serve
-              homemade food with local produce and freshly baked bread, as well
-              as craft cocktails and world-class PBR.{" "}
+              Established in 2017, The BARK is a vegetarian restaurant, venue,
+              and "fine dive bar" in Tallahassee, Florida. We serve homemade
+              food with local produce and freshly baked bread, as well as craft
+              cocktails and world-class PBR.{" "}
               <strong>
                 {" "}
                 We have rotating food, drink, and dessert specials - call or
@@ -82,7 +82,11 @@ function Home({}) {
               aren't answering the phone, it's probably monday (we're closed) or
               there's a show (it's loud)
             </h4>
+            <br />
+            <br />
             <button className='order-online-button'>Order Online</button>
+            <br />
+            <br />
           </div>
           <div className='col-md-4 text-center'>
             <img src='placeholder2.jpg' className='about-img' alt=''></img>
@@ -90,7 +94,7 @@ function Home({}) {
         </div>
       </div>
 
-      <div className='squares-container'>
+      <div className='squares-container container-fluid'>
         {squaresData.map((square, index) => (
           <Square key={index} {...square} />
         ))}

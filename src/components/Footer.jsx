@@ -6,7 +6,7 @@ const phoneNumber = "850-900-5936";
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer-content'>
+      <div className='footer-content container-fluid'>
         <div className='row'>
           <div className='col-md-4 text-center'>
             <p className='hours-text'>
@@ -41,9 +41,11 @@ const Footer = () => {
             </p>
           </div>
           <div className='col-md-4 text-center'>
+            <br />
             <img src='asset3.png' className='bark-logo-img'></img>
           </div>
           <div className='col-md-4 text-center'>
+            <br />
             <p className='footer-email'>
               <a className='custom-link' href='mailto:thebarkfl@gmail.com'>
                 <strong>thebarkfl@gmail.com</strong>
