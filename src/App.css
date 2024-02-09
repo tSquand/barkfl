@@ -36,3 +36,10 @@ html {
   height: 45px;
 }
 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px) {
+  /* Add specific styles for iPads */
+  .hide-on-ipad {
+      display:none;
+  }
+}

@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-content container-fluid'>
         <div className='row'>
-          <div className='col-md-4 text-center'>
+          <div className='col-md-4 col-sm-12 text-center'>
             <p className='hours-text'>
               <a
                 className='custom-link'
@@ -40,11 +40,11 @@ const Footer = () => {
               <strong>Kitchen closes at midnight Wednesday-Saturday!</strong>
             </p>
           </div>
-          <div className='col-md-4 text-center'>
+          <div className='hide-on-ipad col-md-4 col-sm-12 text-center'>
             <br />
             <img src='asset3.png' className='bark-logo-img'></img>
           </div>
-          <div className='col-md-4 text-center'>
+          <div className='col-md-4  col-sm-12 text-center'>
             <br />
             <p className='footer-email'>
               <a className='custom-link' href='mailto:thebarkfl@gmail.com'>
