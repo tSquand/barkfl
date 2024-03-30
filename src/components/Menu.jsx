@@ -12,8 +12,8 @@ function Menu() {
     <div>
       <div className='container text-center'>
         {isMobile ? (
-          <button onClick={() => openPdfInNewTab(pdfUrl)}>
-            Open PDF in New Tab
+          <button className='menu-btn' onClick={() => openPdfInNewTab(pdfUrl)}>
+            View Menu
           </button>
         ) : (
           <iframe
