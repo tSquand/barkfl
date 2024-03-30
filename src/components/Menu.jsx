@@ -2,13 +2,6 @@ import React from "react";
 
 function Menu() {
   const pdfUrl = import.meta.env.BASE_URL + "Bark-Menu.pdf#view=fitH";
-  const brunchUrl = import.meta.env.BASE_URL + "brunch-menu.pdf#view=fitH";
-  const lateNightUrl =
-    import.meta.env.BASE_URL + "late-night-menu.pdf#view=fitH";
-
-  const openPdfInNewTab = (url) => {
-    window.open(url, "_blank");
-  };
 
   const isMobile = window.innerWidth <= 768;
 
@@ -19,7 +12,7 @@ function Menu() {
           <iframe
             title='PDF Viewer'
             src={pdfUrl}
-            width='80%'
+            width={isMobile ? "100%" : "80%"}
             height='900px'
           ></iframe>
         </div>
