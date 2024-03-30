@@ -84,7 +84,14 @@ function Home({}) {
             </h4>
             <br />
             <br />
-            <button className='order-online-button'>Order Online</button>
+            <a
+              href='https://www.doordash.com/ja-JP/store/the-bark-tallahassee-352754/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {" "}
+              <button className='order-online-button'>Order Online</button>
+            </a>
             <br />
             <br />
           </div>
