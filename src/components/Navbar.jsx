@@ -17,7 +17,7 @@ function Navbar() {
     <nav className='navbar navbar-expand-lg navbar-fixed'>
       <div className='container-fluid'>
         {/* Brand/logo */}
-        <Link to='/' className='navbar-brand'>
+        <Link to='/' className='navbar-brand' onClick={closeNav}>
           The Bark
         </Link>
         {/* Toggle button for mobile */}
