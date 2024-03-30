@@ -11,12 +11,16 @@ function Brunch() {
     <div>
       <div className='container text-center'>
         {isMobile ? (
-          <button
-            className='menu-btn'
-            onClick={() => openPdfInNewTab(brunchUrl)}
-          >
-            View Brunch Menu
-          </button>
+          <div>
+            <button
+              className='menu-btn'
+              onClick={() => openPdfInNewTab(brunchUrl)}
+            >
+              View Brunch Menu
+            </button>
+
+            <img src='asset3.png' className='bark-logo-img'></img>
+          </div>
         ) : (
           <iframe
             id='brunchIframe'
