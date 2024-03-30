@@ -12,12 +12,15 @@ function NightMenu() {
     <div>
       <div className='container text-center'>
         {isMobile ? (
-          <button
-            className='menu-btn'
-            onClick={() => openPdfInNewTab(nightMenuUrl)}
-          >
-            View Late Night Menu
-          </button>
+          <div>
+            <button
+              className='menu-btn'
+              onClick={() => openPdfInNewTab(nightMenuUrl)}
+            >
+              View Late Night Menu
+            </button>
+            <img src='asset3.png' className='bark-logo-img'></img>
+          </div>
         ) : (
           <iframe
             id='nightIframe'

@@ -214,12 +214,6 @@ border: solid 2px #0066cc;
     margin-left: 10px;
 }
 
-
-
-
-
-
-
 .menu-btn{
 
 font-family: Roboto, sans-serif;
@@ -238,5 +232,7 @@ flex-direction: row;
 align-items: center;
 cursor: pointer;
 margin: auto;
+margin-top: 25px;
+margin-bottom: 50px;
 
 }
