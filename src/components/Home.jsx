@@ -37,8 +37,8 @@ function Home({}) {
       <div className='about-section container-fluid'>
         <div className='row'>
           <div className='col-md-6 about-content text-center'>
-            <h1>Welcome to The BARK</h1>
-            <h4>
+            <h1 className='about-section-text'>Welcome to The BARK</h1>
+            <h4 className='about-section-text'>
               Established in 2017, The BARK is a vegetarian restaurant, venue,
               and "fine dive bar" in Tallahassee, Florida. We serve homemade
               food with local produce and freshly baked bread, as well as craft
@@ -73,11 +73,11 @@ function Home({}) {
                 ></img>
               </a>
             </h2>
-            <h4>
+            <h4 className='about-section-text'>
               Come by for karaoke, live music, art markets, and{" "}
               <Link to='/events'> more.</Link>
             </h4>
-            <h4>
+            <h4 className='about-section-text'>
               Outdoor seating is available on our patio and Barking Lot. If we
               aren't answering the phone, it's probably monday (we're closed) or
               there's a show (it's loud)

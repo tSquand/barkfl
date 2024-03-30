@@ -167,17 +167,21 @@ body .navbar .nav-link {
 }
 
 .about-section {
-    background-color: rgb(152,174,215);
+    background-color: rgb(82, 148, 184);
     padding: 2% 0;
+
 }
 
+.about-section-text {
+   color: white;
+}
 
 .about-img {
     width: 500px;
     height: auto;
     object-fit: cover;
     border-radius: 50%;
-    border: 20px solid rgb(201, 65, 88);
+    border: 20px solid white;
     max-width: 100%;
 }
 
@@ -186,7 +190,7 @@ body .navbar .nav-link {
     font-weight: 1000;
     font-size: 25px;
     color: #000000;
-    background-color: #f4a261;
+    background-color: rgb(143, 204, 143);
     padding: 10px 30px;
     border: solid #48cae4 2px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
