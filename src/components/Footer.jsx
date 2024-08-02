@@ -85,7 +85,7 @@ const Footer = () => {
                 <img src='logo-square.svg' className='icon' alt='Square'></img>
               </a>
               <a
-                href='https://www.doordash.com/ja-JP/store/the-bark-tallahassee-352754/'
+                href='https://www.doordash.com/en-US/store/the-bark-tallahassee-352754/'
                 target='_blank'
                 rel='noopener noreferrer'
               >
