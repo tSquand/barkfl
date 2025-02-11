@@ -31,7 +31,7 @@ const Footer = () => {
               <strong>Tuesday</strong> 11:00am - 10:00pm
             </p>
             <p className='hours-text'>
-              <strong>Wednesday - Saturday</strong> 11:00am - 2:00am
+              <strong>Wednesday - Saturday</strong> 11:00am - 12:00am
             </p>
             <p className='hours-text'>
               <strong>Sunday</strong> 11:00am - 10:00pm
